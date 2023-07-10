@@ -13,7 +13,7 @@
 
 <body>
     <h1>Expense Tracker</h1>
-    <form>
+    <form id = "form">
         <div class="form-group">
             <label for="exampleInputExpense">Expense</label>
             <input type="number" id="amount" class="form-control" placeholder="Amount"/>
@@ -40,17 +40,18 @@
     <div class="container">
         <h2>Total Expenses</h2>
         <p>Your Expeneses Till Now.</p>            
-        <table class="table table-bordered">
+        <table class="table table-bordered" id="table">
           <thead>
             <tr>
               <th>Amount</th>
               <th>Description</th>
               <th>Category</th>
+              <th>Action</th>
             </tr>
           </thead>
         </table>
       </div>
-      
+      <script src="main.js"></script>
 </body>
 
 </html>
