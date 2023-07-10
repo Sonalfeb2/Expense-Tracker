@@ -85,7 +85,7 @@ function RemoveItem(e) {
       var row = e.target.parentElement.parentElement;
       var td = row.firstElementChild;
       var localData = JSON.parse(localStorage.getItem("Expense"));
-      var newStore = localData.filter(value => value.date !== td.textContent);
+      var newStore = localData.filter(value => value.date !== td.value);
       localStorage.clear("Expense");
       localStorage.setItem("Expense", JSON.stringify(newStore));
       window.location.reload();
