@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Expense Tracker</h1>
+    <form>
+        <div class="form-group">
+            <label for="exampleInputExpense">Expense</label>
+            <input type="number" id="amount" class="form-control" placeholder="Amount"/>
+
+        </div>
+        <div class="form-group">
+            <label for="exampleDescription">Description</label>
+            <input type="text" class="form-control" id="description" placeholder="Description">
+        </div>
+        <div class="form-group">
+            <label for="sel1">Category:</label>
+            <select class="form-control" id="sel1">
+              <option>Shopping</option>
+              <option>Vegatables</option>
+              <option>Groccery</option>
+              <option>Online Order</option>
+              <option>Electricity Bill</option>
+              <option>House Rent</option>
+              <option>Water Bill</option>
+            </select>
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div class="container">
+        <h2>Total Expenses</h2>
+        <p>Your Expeneses Till Now.</p>            
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Amount</th>
+              <th>Description</th>
+              <th>Category</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      
+</body>
+
+</html>
