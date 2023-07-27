@@ -109,6 +109,7 @@ function RemoveItem(e) {
     if (confirm("Are You Sure")) {
       var newStore = localData.filter(value => value.id !== rowId);
       localStorage.setItem("Expense", JSON.stringify(newStore));
+      alert("Delete SuccessFully")
       window.location.reload();
     }
   }
